@@ -1,0 +1,41 @@
+
+.wave {
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #dash {
+    visibility: hidden;
+  }
+
+  .wave span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--name))
+  }
+  
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+
+  body {
+    background-color: pink;
+    }
+    
+    
+.background {
+        background-image: url('assets/images/5236199.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-position: center center;
+        background-attachment: fixed;
+        background-color: pink;
+      }
